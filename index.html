@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="bg-gray-800 flex gp-1 md:gap-8 py-4 md:flex-nowrap justify-between items-center px-8 flex-wrap">
+    <div>
+        <img src="images/logo.svg" class="w-20 md:w-32">
+    </div>
+    
+    <div class ="text-white w-fit gap-8 px-2 flex md:hidden items-center">
+        <h4>Hello, <span class="font-bold">Martin</span></h4>
+        <button><i class="fa-solid fa-shopping-cart"></i> </button>
+    </div>
+    <!-- <div class="flex w-full flex-wrap"> -->
+        <!-- start of search bar -->
+        <form id="form" class="flex max-w-[720px]  h-8 bg-white -space-x-2 overflow-hidden w-full rounded-md"
+        >
+                <input class="w-full h-full px-4 py-2 bg-transparent  outline-none" type="text" placeholder="Search Amazon" id="searchBar">
+                
+                <div class="bg-orange-300 p-2 grid place-items-center rounded-md"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+        </form>
+        
+        <!-- end of search bar -->
+        <div class ="text-white w-[200px] gap-8 px-2 md:flex  hidden items-center">
+            <h4>Hello, <span class="font-bold">Martin</span></h4>
+            <button><i class="fa-solid fa-shopping-cart"></i> </button>
+        </div>
+    <!-- </div> -->
+
+</header>
+<div class="relative w-full h-full max-h-[200px] md:max-h-[320px]" id="slider">
+    <div class="w-full justify-between px-8 text-2xl h-screen max-h-[200px] md:max-h-[320px] flex items-center text-black"> 
+        <button id="slider-left" class="disabled:opacity-5">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id = "slider-right" class="disabled:opacity-5">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+    <img src="images/banner1.jpg" alt="" class="opacity-1 absolute -z-50 top-0 left-0 w-fullobject-center">
+    <img src="images/banner2.jpg" alt="" class="opacity-0 absolute -z-50 top-0 left-0 w-fullobject-center">
+    <img src="images/banner3.jpg" alt="" class="opacity-0 absolute -z-50 top-0 left-0 w-fullobject-center">
+    <img src="images/banner4.jpg" alt="" class="opacity-0 absolute -z-50 top-0 left-0 w-fullobject-center">
+</div>
+
+<section class=" from-white/5  -translate-y-10 backdrop-blur-xl py-20 px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="products-container">
+    <!-- PRODUCT -->
+    
+        
+    <!-- END -->
+</div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
